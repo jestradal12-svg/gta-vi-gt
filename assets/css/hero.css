@@ -75,7 +75,7 @@
 /* Logo / Título principal */
 .hero__logo-text {
   font-family: 'Bebas Neue', 'Impact', sans-serif;
-  font-size: clamp(5rem, 16vw, 14rem);
+  font-size: 10rem;
   line-height: 0.85;
   letter-spacing: -2px;
   color: #ffffff;
