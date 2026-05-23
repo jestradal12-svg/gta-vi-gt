@@ -1,6 +1,6 @@
 # GTA VI — GT Landing Page
 
-Proyecto académico para **Procesos y Soluciones Tecnológicas, S.A.**
+Proyecto Ingenieria en Sistemas Universida Mariano Galvez
 Landing page estática que emula la presentación del videojuego GTA VI.
 
 ## Tecnologías usadas
