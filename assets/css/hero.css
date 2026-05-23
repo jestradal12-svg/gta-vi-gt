@@ -96,7 +96,7 @@
 /* Subtítulo */
 .hero__subtitle {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: clamp(0.85rem, 2vw, 1.1rem);
+  font-size: 1rem;
   letter-spacing: 6px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.45);
