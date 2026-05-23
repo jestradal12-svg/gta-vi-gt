@@ -6,7 +6,7 @@ Landing page estática que emula la presentación del videojuego GTA VI.
 ## Tecnologías usadas
 
 - HTML5 semántico
-- CSS3 puro (sin frameworks)
+- CSS3 
 - JavaScript Vanilla (sin librerías)
 - normalize.css v8.0.1
 
@@ -26,24 +26,21 @@ gta-vi-gt/
 │   └── javascript/
 │       └── main.js         ← JavaScript Vanilla
 ├── design/                 ← Mockups y guías de diseño
-├── fonts/                  ← Fuentes locales (si aplica)
+├── fonts/                  ← Fuentes locales 
 └── images/                 ← Imágenes del proyecto
 ```
 
 ## Restricciones técnicas cumplidas
 
-- ✅ Solo CSS3 (sin Sass, sin ITCSS)
+- ✅ Solo CSS3 
 - ✅ Sin Bootstrap, Foundation ni otros frameworks CSS
-- ✅ Sin Angular, Vue ni React — JavaScript Vanilla
+- ✅ JavaScript Vanilla
 - ✅ Sin PHP ni lenguajes de servidor
 - ✅ Sin MVC ni programación por capas
 
-## Ver en vivo
-
-[GitHub Pages Link aquí]
 
 ## Autor
 
-Proyecto individual — [Tu nombre]
-Curso: Desarrollo Web
+Proyecto individual — Jose Rodrigo Estrada Lopez
+Curso: Introduccion a los Sistemas
 ```
