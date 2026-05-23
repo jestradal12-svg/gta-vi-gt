@@ -1,0 +1,128 @@
+/* =============================================
+   NAVBAR WIDGET - navbar.css
+   Controla la barra de navegación principal
+   ============================================= */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 24px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.4s ease, padding 0.4s ease;
+  box-sizing: border-box;
+}
+
+.navbar--scrolled {
+  background: rgba(5, 5, 10, 0.95);
+  padding: 14px 48px;
+  border-bottom: 1px solid rgba(255, 100, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.navbar__brand {
+  font-family: 'Bebas Neue', 'Impact', sans-serif;
+  font-size: 1.6rem;
+  color: #ff6400;
+  letter-spacing: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 36px;
+}
+
+.navbar__links li a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navbar__links li a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #ff6400;
+  transition: width 0.3s ease;
+}
+
+.navbar__links li a:hover {
+  color: #ff6400;
+}
+
+.navbar__links li a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger para móvil */
+.navbar__toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+
+.navbar__toggle span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #ff6400;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 18px 24px;
+  }
+
+  .navbar--scrolled {
+    padding: 12px 24px;
+  }
+
+  .navbar__toggle {
+    display: flex;
+  }
+
+  .navbar__links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 260px;
+    background: rgba(5, 5, 10, 0.98);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    transition: right 0.4s ease;
+    border-left: 1px solid rgba(255, 100, 0, 0.2);
+  }
+
+  .navbar__links--open {
+    right: 0;
+  }
+
+  .navbar__links li a {
+    font-size: 1.1rem;
+  }
+}
