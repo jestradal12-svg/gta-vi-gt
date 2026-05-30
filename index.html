@@ -4,14 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Grand Theft Auto VI — Próximamente. La experiencia más épica del crimen llega a una nueva era.">
-  <meta name="author" content="Jose Rodrigo Estrada Lopez">
+  <meta name="description" content="Grand Theft Auto VI — Próximamente.">
+  <meta name="author" content="Procesos y Soluciones Tecnológicas, S.A.">
   <title>GTA VI — Grand Theft Auto VI | Coming Soon</title>
 
-  <!-- Favicon simple con emoji -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
 
-  <!-- CSS: Primero normalize, luego los widgets, luego el estilo principal -->
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/navbar.css">
   <link rel="stylesheet" href="assets/css/hero.css">
@@ -22,9 +20,7 @@
 
 <body>
 
-  <!-- ════════════════════════════════════════════
-       LOADER — Pantalla de carga inicial
-  ════════════════════════════════════════════ -->
+  <!-- LOADER -->
   <div class="loader" id="loader" aria-hidden="true">
     <div class="loader__text">GTA VI</div>
     <div class="loader__bar-wrap">
@@ -32,16 +28,11 @@
     </div>
   </div>
 
-
-  <!-- ════════════════════════════════════════════
-       NAVBAR — Barra de navegación fija
-  ════════════════════════════════════════════ -->
+  <!-- NAVBAR -->
   <nav class="navbar" role="navigation" aria-label="Navegación principal">
-
     <a href="#hero" class="navbar__brand">GTA VI</a>
 
-    <!-- Botón hamburguesa para móvil -->
-    <button class="navbar__toggle" aria-label="Abrir menú" aria-expanded="false">
+    <button class="navbar__toggle" aria-label="Abrir menú">
       <span></span>
       <span></span>
       <span></span>
@@ -54,43 +45,34 @@
       <li><a href="#stats">Estadísticas</a></li>
       <li><a href="#footer">Contacto</a></li>
     </ul>
-
   </nav>
 
-
-  <!-- ════════════════════════════════════════════
-       HERO — Sección principal de presentación
-  ════════════════════════════════════════════ -->
+  <!-- HERO -->
   <section class="hero" id="hero" aria-label="Sección principal">
 
-    <!-- Fondo con gradiente y textura -->
     <div class="hero__bg" aria-hidden="true"></div>
-
-    <!-- Líneas decorativas laterales -->
     <div class="hero__line-left"  aria-hidden="true"></div>
     <div class="hero__line-right" aria-hidden="true"></div>
 
-    <!-- Contenido principal -->
     <div class="hero__content">
-  <p class="hero__eyebrow">Rockstar Games presenta</p>
+      <p class="hero__eyebrow">Rockstar Games presenta</p>
 
-  <!-- Logo como imagen -->
-  <img
-  src="https://www.gtabase.com/images/gta-6/artworks/official/gta6logo.png"
-  alt="Grand Theft Auto VI"
-  class="hero__logo-img"
->
+      <!-- TÍTULO EN TEXTO — no depende de imagen externa -->
+      <h1 class="hero__logo-text">
+        GTA
+        <span>VI</span>
+      </h1>
 
-      <p class="hero__subtitle">Grand Theft Auto &nbsp;·&nbsp; Coming Soon &nbsp;·&nbsp; 2025</p>
+      <p class="hero__subtitle">
+        Grand Theft Auto &nbsp;·&nbsp; Coming Soon &nbsp;·&nbsp; 2025
+      </p>
 
       <div class="hero__actions">
         <a href="#trailer" class="btn btn--primary">Ver Tráiler</a>
         <a href="#features" class="btn btn--secondary">Descubrir más</a>
       </div>
-
     </div>
 
-    <!-- Indicador de scroll -->
     <div class="hero__scroll" aria-hidden="true">
       <span>Scroll</span>
       <div class="hero__scroll-line"></div>
@@ -98,44 +80,28 @@
 
   </section>
 
-
-  <!-- ════════════════════════════════════════════
-       TRAILER — Sección del video
-  ════════════════════════════════════════════ -->
+  <!-- TRAILER -->
   <section class="trailer" id="trailer" aria-label="Sección del tráiler">
 
-    <div class="section__header reveal">
+    <div class="section__header">
       <p class="section__eyebrow">Primer vistazo</p>
       <h2 class="section__title">Tráiler Oficial</h2>
       <div class="divider" style="margin-top:16px;"></div>
     </div>
 
-    <!-- Placeholder del video (reemplazar con iframe de YouTube cuando tengas el link) -->
-    <div class="trailer__video-wrapper reveal">
-      <div class="trailer__video-placeholder" role="button" tabindex="0" aria-label="Reproducir tráiler de GTA VI">
+    <div class="trailer__video-wrapper">
+      <div class="trailer__video-placeholder"
+           role="button"
+           tabindex="0"
+           aria-label="Reproducir tráiler de GTA VI">
         <div class="trailer__play-btn" aria-hidden="true"></div>
         <span class="trailer__video-label">Reproducir tráiler — 1:31</span>
       </div>
     </div>
-    <!--
-      NOTA: Para agregar el video real de YouTube, reemplaza el div de arriba con:
-      <div class="trailer__video-wrapper">
-        <iframe
-          width="100%"
-          style="aspect-ratio:16/9;border:0;"
-          src="https://www.youtube.com/embed/QdBZExpgErs"
-          title="GTA VI Official Trailer"
-          allowfullscreen>
-        </iframe>
-      </div>
-    -->
 
   </section>
 
-
-  <!-- ════════════════════════════════════════════
-       FEATURES — Características del juego
-  ════════════════════════════════════════════ -->
+  <!-- FEATURES -->
   <section class="features" id="features" aria-label="Características del juego">
 
     <div class="section__header text-center">
@@ -146,12 +112,12 @@
 
     <div class="features__grid">
 
-      <article class="feature-card reveal">
+      <article class="feature-card">
         <div class="feature-card__number">01</div>
         <h3 class="feature-card__title">Mundo Abierto</h3>
         <p class="feature-card__text">
-          Explora Vice City y sus alrededores en el mundo más grande y detallado
-          de la historia de la franquicia.
+          Explora Vice City y sus alrededores en el mundo más grande
+          y detallado de la historia de la franquicia.
         </p>
       </article>
 
@@ -159,8 +125,8 @@
         <div class="feature-card__number">02</div>
         <h3 class="feature-card__title">Historia Épica</h3>
         <p class="feature-card__text">
-          Por primera vez en la saga, vive la historia desde la perspectiva
-          de un personaje femenino protagonista.
+          Por primera vez en la saga, vive la historia desde la
+          perspectiva de un personaje femenino protagonista.
         </p>
       </article>
 
@@ -168,8 +134,8 @@
         <div class="feature-card__number">03</div>
         <h3 class="feature-card__title">Gráficos Next-Gen</h3>
         <p class="feature-card__text">
-          Tecnología de renderizado avanzada que lleva el realismo visual
-          a un nivel nunca antes visto en un videojuego.
+          Tecnología de renderizado avanzada que lleva el realismo
+          visual a un nivel nunca antes visto.
         </p>
       </article>
 
@@ -178,7 +144,7 @@
         <h3 class="feature-card__title">Online Masivo</h3>
         <p class="feature-card__text">
           Un universo online expandido con más actividades, negocios
-          y misiones cooperativas que su predecesor.
+          y misiones cooperativas.
         </p>
       </article>
 
@@ -186,8 +152,8 @@
         <div class="feature-card__number">05</div>
         <h3 class="feature-card__title">IA Avanzada</h3>
         <p class="feature-card__text">
-          NPCs con comportamientos dinámicos e impredecibles que reaccionan
-          al entorno de formas completamente nuevas.
+          NPCs con comportamientos dinámicos e impredecibles que
+          reaccionan al entorno de formas completamente nuevas.
         </p>
       </article>
 
@@ -204,10 +170,7 @@
 
   </section>
 
-
-  <!-- ════════════════════════════════════════════
-       STATS — Estadísticas con animación
-  ════════════════════════════════════════════ -->
+  <!-- STATS -->
   <section class="trailer" id="stats" aria-label="Estadísticas">
 
     <div class="section__header">
@@ -218,33 +181,38 @@
     <div class="features__grid" style="max-width:900px; margin-top:0;">
 
       <div class="feature-card text-center">
-        <div class="feature-card__number" data-count="170" style="font-size:4rem; color:rgba(255,100,0,0.8);">0</div>
+        <div class="feature-card__number"
+             style="font-size:4rem; color:rgba(255,100,0,0.8);">
+          170
+        </div>
         <h3 class="feature-card__title">km² de Mapa</h3>
-        <p class="feature-card__text">El mundo abierto más extenso de la saga</p>
+        <p class="feature-card__text">El mundo más extenso de la saga</p>
       </div>
 
       <div class="feature-card text-center">
-        <div class="feature-card__number" data-count="700" style="font-size:4rem; color:rgba(255,100,0,0.8);">0</div>
+        <div class="feature-card__number"
+             style="font-size:4rem; color:rgba(255,100,0,0.8);">
+          700
+        </div>
         <h3 class="feature-card__title">Misiones</h3>
-        <p class="feature-card__text">Historia principal y misiones secundarias</p>
+        <p class="feature-card__text">Historia principal y secundarias</p>
       </div>
 
       <div class="feature-card text-center">
-        <div class="feature-card__number" data-count="12" style="font-size:4rem; color:rgba(255,100,0,0.8);">0</div>
+        <div class="feature-card__number"
+             style="font-size:4rem; color:rgba(255,100,0,0.8);">
+          12
+        </div>
         <h3 class="feature-card__title">Años</h3>
-        <p class="feature-card__text">De desarrollo y producción del juego</p>
+        <p class="feature-card__text">De desarrollo y producción</p>
       </div>
 
     </div>
 
   </section>
 
-
-  <!-- ════════════════════════════════════════════
-       FOOTER — Pie de página
-  ════════════════════════════════════════════ -->
+  <!-- FOOTER -->
   <footer class="footer" id="footer" role="contentinfo">
-
     <div class="footer__brand">GTA VI</div>
 
     <p class="footer__copy">
@@ -254,13 +222,15 @@
     <ul class="footer__links">
       <li><a href="#">Privacidad</a></li>
       <li><a href="#">Términos</a></li>
-      <li><a href="#">GitHub</a></li>
+      <li>
+        <a href="https://jestradal12-svg.github.io/gta-vi-gt"
+           target="_blank">
+          Ver en vivo
+        </a>
+      </li>
     </ul>
-
   </footer>
 
-
-  <!-- JavaScript al final del body -->
   <script src="assets/javascript/main.js"></script>
 
 </body>
