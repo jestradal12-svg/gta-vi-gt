@@ -36,7 +36,6 @@
     rgba(5, 5, 15, 0.8) 100%
   );
 }
-}
 /* Overlay de ruido/textura */
 .hero__bg::after {
   content: '';
